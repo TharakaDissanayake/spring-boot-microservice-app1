@@ -1,14 +1,7 @@
-server:
-  port: 8081
-
-
 spring:
   application:
     name: department-service
 
-#Go and connect to the service registry
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
-
+  #import configuration details for department service in following file path
+  config:
+    import: "optional:configserver:http://localhost:8088/"

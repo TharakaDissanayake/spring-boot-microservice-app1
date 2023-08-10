@@ -1,0 +1,9 @@
+server:
+  port: 8088
+
+#Default profile is get  If it is get config server looks configuration details from the GitHub.
+#So it is changed to the native then it looks for local files
+spring:
+  profiles:
+    active: native
+
